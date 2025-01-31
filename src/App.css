@@ -1,0 +1,131 @@
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #232f3e; /* Amazon header background color */
+  z-index: 1000;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+  color: white;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+  margin-right: 50px; /* Space between logo and next section */
+}
+
+.logo_link {
+  display: flex;
+}
+
+.logo_image {
+  height: 40px; /* Logo height */
+}
+
+.delivery_info {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Space between logo and delivery info */
+  color: #ffffff; /* Text color */
+}
+
+.delivery_icon {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.search_container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allow the search bar to take available space */
+  margin-right: 50px; /* Space between search bar and links */
+}
+
+.search_select {
+  padding: 5px;
+  margin-right: 5px; /* Space between select and input */
+}
+
+.search_input {
+  padding: 5px;
+  width: 300px; /* Adjust width as needed */
+  border: none;
+  border-radius: 4px;
+}
+
+.search_icon {
+  margin-left: 5px; /* Space between input and icon */
+  cursor: pointer;
+}
+
+.links_container {
+  display: flex;
+  align-items: center;
+}
+
+.language_selector {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Space between language selector and account link */
+}
+
+.flag_image {
+  width: 20px; /* Flag image size */
+  height: 15px;
+  margin-right: 5px; /* Space between flag and select */
+}
+
+.language_select {
+  padding: 5px;
+  border: none;
+  background: transparent;
+  color: white; /* Text color for language selector */
+}
+
+.account_link,
+.orders_link,
+.cart_link {
+  color: white; /* Text color */
+  text-decoration: none;
+  margin-left: 20px; /* Space between links */
+}
+
+.account_link div {
+  display: flex;
+  flex-direction: column;
+}
+
+.orders_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart_count {
+  position: relative;
+  background-color: red; /* Badge color */
+  border-radius: 50%;
+  padding: 2px 6px; /* Adjust padding for badge */
+  color: white;
+  font-size: 12px; /* Font size for cart count */
+  top: -10px; /* Adjust position of the badge */
+  left: -10px; /* Adjust position of the badge */
+}
+
+@media (max-width: 768px) {
+  .search_input {
+    width: 150px; /* Adjust width for smaller screens */
+  }
+
+  .links_container {
+    flex-direction: column; /* Stack links vertically on small screens */
+  }
+
+  .language_selector {
+    margin-bottom: 10px; /* Space between language selector and other links */
+  }
+}
