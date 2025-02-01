@@ -31,7 +31,7 @@ function Order() {
       }
 
 
-    }, []);
+    }, [ ]);
 
   return (
     <Layout>

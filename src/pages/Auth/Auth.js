@@ -32,7 +32,7 @@ function Auth() {
 
   const authHandler = async (e) => {
     e.preventDefault();
-    if (e.target.name == "signin") {
+    if (e.target.name === "signin") {
       // firebase auth
       setLoading({ ...loading, signIn: true });
       signInWithEmailAndPassword(auth, email, password)
