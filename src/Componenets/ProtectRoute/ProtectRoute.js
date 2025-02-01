@@ -11,7 +11,7 @@ function ProtectRoute({children,msg,redirect}) {
     if (!user) {
       navigate("/auth", { state: { msg, redirect } });
     }
-  }, [user, msg, redirect]);   //for every user
+  }, [user, msg, redirect, navigate]);   //for every user
 
   return children
 
