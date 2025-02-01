@@ -7,11 +7,11 @@ function ProtectRoute({children,msg,redirect}) {
   
   const [{user},dispatch] = useContext(DataContext)
 
-  useEffect(()=>{
-     if(!user){
-        navigate('/auth',{state:{msg,redirect}})
-     }  
-  }, [user])   //for every user
+  useEffect(() => {
+    if (!user) {
+      navigate("/auth", { state: { msg, redirect } });
+    }
+  }, [user, msg, redirect]);   //for every user
 
   return children
 

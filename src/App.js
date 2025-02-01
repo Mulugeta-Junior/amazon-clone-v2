@@ -20,12 +20,13 @@ function App() {
           user: authUser,
         });
       } else {
-        dispatch({ 
+        dispatch({
           type: Type.SET_USER,
-            user: null });
+          user: null,
+        });
       }
     });
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
